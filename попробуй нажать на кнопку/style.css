@@ -1,0 +1,33 @@
+/* Делаем красивый темный фон для игры */
+body {
+    background-color: #1a1a2e;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Чтобы из-за прыгающей кнопки не появлялись полосы прокрутки */
+}
+
+/* Стили нашей бешеной кнопки */
+.crazy-button {
+    position: absolute;
+    /* Начальное положение по центру экрана */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Внешний вид кнопки */
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+}
+
+/* Теперь здесь нет координат, JS будет управлять этим сам */
+.crazy-button:hover {
+    background-color: #2ecc71; 
+}
